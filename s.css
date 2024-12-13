@@ -1,87 +1,99 @@
 *{
     margin: 0;
-    border: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
     position: absolute;
-   display: grid;
-   grid-template-columns: 1fr;
-    padding: 20px;
-    
-    font-size: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2px;
+    padding: px;
+    background-color: black;
+}
+aside{
+    position: absolute;
 
-   
-
+    width:3em;
+    padding: 17px;
+    height: 100vh;
+    border-radius: 10px 10px 0px 0px;
+    background-color:  rgb(21, 67, 98);
+    color: white;
 }
 nav{
-    display: flex;
-    
-}
-.navbar{
-    
-    
-    justify-content: space-between;
-    align-items: center;
-    font-size: small;
-    background-color:rgb(21, 67, 98) ;
-    border-radius: 10px;
-    padding: 15px 20px;
-    margin-left: 60PX;
+    max-height: 4em;
+    position: relative;
+    width: 94vw;
+    left: 3.2em;
+   background-color: rgb(21, 67, 98);
+   display: flex;
+   flex-wrap: ; 
+   gap: 7em;
+   padding: 10px;
+   border-radius: 10px;
+   align-items: center;
+   justify-content: space-between;
 }
 .navlinks{
-    margin-left: 14em;
-    display: flex;
+    position: relative;
     list-style: none;
-    gap: 9em;
-
+    display: flex;
+    gap:7em;
+    left: 10em;
+    font-size: smaller;
 }
-.navlinks li a{
+a{
     text-decoration: none;
     color: white;
-    cursor: pointer;
 }
-.connect-wallet{
+.globe{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+.connect{
     border: 1px none;
-    
+    border: 1px solid white;
     border-radius: 30px;
-    font-size: smaller;
+    font-size: x-small;
     color: white;
     padding: 5px 5px;
-    background-color: rgb(12, 79, 127);
+    background-color:  rgb(21, 67, 98);
     cursor: pointer;
-       
 }
-.logo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    margin-left: 5em;
+.creon{
+    color: white;
+    margin-left:3em ;
 }
+
 .create{
-   
+   width: 94vw;
     position: relative;
-    display: grid;
+    
     align-items: center;
-    padding: 15px;
+    padding: 60px;
     border-radius: 10px;
     background-color:  rgb(21, 67, 98);
-  margin-left: 60px;
+  margin-left: 3.2em;
   background-image:  url(bag\ image.jpg);
   background-size:   contain ;
   background-position: right center;
   background-repeat:no-repeat ;
   background-position-x: 47em;
   background-size: 270px 270px;
+  
 }
 
 
 .create h1{
-    position: relative;
+    position: absolute;
     left: 1em;
-    font-size: 60px;
+    color: white;
+    position: relative;
+    
+    font-size: 4em; 
     letter-spacing: 3px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     animation: create 2s ease-out;
@@ -119,12 +131,13 @@ nav{
         transform: scale(1.1);
     }
 }
-
 .lower{
+    position: relative;
+    width: 94vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
-    margin-left: 60PX;
+    left: 3.2em;
     animation: slide-in 0.8s ease-out;
 }
 @keyframes slide-in{
@@ -152,7 +165,7 @@ nav{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    color: black;
     display: grid;
-    padding: 40px;
+    padding: 43px;
     background-image: linear-gradient(to bottom, rgb(27, 221, 76), rgb(210, 223, 126) );
     border-radius: 10px 10px 0px 0px;
    
@@ -163,7 +176,7 @@ nav{
    
     display: block;
     background-color: rgb(144, 201, 196);
-    padding: 40px;
+    padding: 43px;
     border-radius: 10px 10px 0px 0px;
    align-items: flex-start;
     color: black;
@@ -174,10 +187,10 @@ nav{
 .end::before{
     content: "";
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 71%;
     width: 300px;
-    height:80px;
+    height:40px;
     
     background-image: radial-gradient(circle, black 0.5px, transparent 4px);
     background-size:20px 20px ;
@@ -198,21 +211,6 @@ button{
     color: white;
     padding: 6px;
     
-}
-.side{
-    position: absolute;
-    padding: 20px;
-    align-content: center;
-    background-color: rgb(21, 67, 98);
-    display: flex;
-    left: 16px;
-    border-radius: 10px 10px 0px 0px;
-    width: 60px;
-    height: 95vh;
-    
-   
-    
-
 }
 .black{
     position: relative;
@@ -237,15 +235,13 @@ button{
     border-radius: 20px;
     padding:  6px ;
     width: 120px;
-    left: 67em;
-    bottom: 13.7em;
+    left: 64em;
+    bottom: 12em;
     color: black;
     font-size: smaller;
 }
-.img{
-    display: flex ;
-    gap: 4px;
-}
+
+
 .flower{
     margin-bottom: 4em;
     float: right;
@@ -289,26 +285,26 @@ button{
 }
 .midp{
 position: relative;
-bottom: px;
+bottom: 1em;
 
 }
 #web{
     display: grid;
     position: relative;
-    bottom: 23px;
+    top: 3px;
     gap: 0.5em;
 }
 #web3{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .p{
-    position: relative;
-    top: 2em;
+   position: relative;
+   top: 2em; 
     
 }
 .colors{
     display: flex;
-    margin-top: 2em;
+    margin-top: em;
     
     
 }
@@ -338,10 +334,12 @@ bottom: px;
      width: 30px;
      border-radius: 50%;
 }
-@media screen {
+@media screen and(max-width:768px) {
+
     
 }
     
+
 
 
 
